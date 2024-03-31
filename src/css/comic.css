@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+.navbar{
+  background-color: #ffc107;
+  opacity: 0.;
+  color: black;
+  font-weight: bold;
+}
+/*boton de scroll*/
+.boton-scroll a {
+  position: fixed;
+  width: 40px;
+  text-align: center;
+  font-size: 25px;
+  bottom: 4%;
+  right: 2%;
+  z-index: 9;
+  background-color: black;
+  color: #ffc107;
+  opacity: 0.5;
+  border-radius: 100%;
+  visibility: hidden;
+  animation: baja-sube 1s ease infinite;
+}
+.boton-scroll a:hover {
+  background-color: #ffc107;
+  color: black;
+  border: 1px solid black;
+  transition: 0.3s;
+}
+@keyframes baja-sube {
+  0% {
+    transform: translateY(10px);
+  }
+
+  25% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(10px);
+  }
+}
+/*fin boton de scroll*/
+/*efectoparallax*/
+.efecParallax {
+  background-image: url(../img/caballeros/12-dorados.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+/* fondo del parallax de saga */
+.efecParallax1 {
+  background-image: url(../img/caballeros/milo.gif);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 350px;
+}
+.jumbotron {
+  background-color: #ffc107;
+  color: black;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.jumbotron p {
+  font-size: 1.0rem;
+}
+/*box video top*/
+.boxvideo1 {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 1;
+}
+
+.boxvideo1 video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/*My Comics*/
+.galeria {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.galeria h1 {
+  font-weight: 900;
+  text-shadow: 1px 1px 10px gray;
+}
+
+.galeria .boxizq {
+  width: 100%;
+  height: 100%
+}
+
+.galeria .imgizq {
+  width: 88%;
+  height: 100%;
+  margin: auto 6%;
+}
+
+.galeria #comics1,
+#comics2,
+#comics3,
+#comics4,
+#comics5,
+#comics6,
+#comics7,
+#comics8,
+#comics9 {
+  width: 100%;
+  height: auto;
+  margin-top: 5px;
+}
+
+.galeria #comics1:hover {
+  box-shadow: 01px 01px 10px gray;
+  cursor: pointer;
+}
+
+.galeria #comics2:hover {
+  box-shadow: 01px 01px 10px gray;
+  cursor: pointer;
+}
+
+.galeria #comics3:hover {
+  box-shadow: 01px 01px 10px gray;
+  cursor: pointer;
+}
+
+.galeria #comics4:hover {
+  box-shadow: 01px 01px 10px gray;
+  cursor: pointer;
+}
+
+.galeria #comics5:hover {
+  box-shadow: 01px 01px 10px gray;
+  cursor: pointer;
+}
+
+.galeria #comics6:hover {
+  box-shadow: 01px 01px 10px gray;
+  cursor: pointer;
+}
+
+.galeria #comics7:hover {
+  box-shadow: 01px 01px 10px gray;
+  cursor: pointer;
+}
+
+.galeria #comics8:hover {
+  box-shadow: 01px 01px 10px gray;
+  cursor: pointer;
+}
+
+.galeria #comics9:hover {
+  box-shadow: 01px 01px 10px gray;
+  cursor: pointer;
+}
+.card-deck
+{
+ padding: 20px;
+}
+.card-deck img
+{
+ width: 100%;
+ height: 300px;
+}
+
+/*modal card*/
+.card a:hover {
+  cursor: pointer;
+}
+
+#shura video,
+#leo video,
+#shaka video,
+#saga video {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#saga .saga img,
+#cancer .cancer img,
+#libra .libra img,
+#sagitario .sagitario img,
+#acuario .acuario img,
+#piscis .piscis img {
+  width: 100%;
+  height: 500px;
+  margin: auto 0px;
+}
+#saga .contenido,
+#cancer .contenido,
+#libra .contenido,
+#sagitario .contenido,
+#acuario .contenido,
+#piscis .contenido{
+  margin: auto 0px;
+}
+section footer a:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 991.98px) {
+  .efecParallax {
+    background-image: url(../img/caballeros/fondoleo.jpg);
+  }
+  .card-deck
+  {
+   padding: 20px;
+  }
+}

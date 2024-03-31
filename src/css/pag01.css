@@ -1,0 +1,116 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	font-family: 'Times New Roman', Times, serif;
+}
+body {
+	line-height: 1.5;
+	overflow-x: hidden;
+}
+/*boton de scroll*/
+.boton-scroll a {
+	position: fixed;
+	width: 40px;
+	text-align: center;
+	font-size: 25px;
+	bottom: 4%;
+	right: 2%;
+	z-index: 9;
+	background-color: black;
+	color: white;
+	opacity: 0.7;
+	border-radius: 100%;
+	visibility: hidden;
+	animation: baja-sube 1s ease infinite;
+}
+.boton-scroll a:hover {
+	background-color: bisque;
+	color: black;
+	border: 1px solid black;
+}
+@keyframes baja-sube {
+	0% {
+		transform: translateY(10px);
+	}
+
+	25% {
+		transform: translateY(0px);
+	}
+
+	100% {
+		transform: translateY(10px);
+	}
+}/*fin boton de scroll*/
+.header {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+.content {
+	max-width: 100%;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	margin: auto;
+	text-align: center;
+}
+.header-video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+.header-video video {
+	min-width: 100%;
+	min-height: 100%;
+}
+.header-content {z-index: 1}
+.header-content h1 {
+	font-size: 100px;
+	margin-bottom: 0;
+}
+.header-content p {
+	font-size: 2rem;
+	display: block;
+	padding-bottom: 2rem;
+}
+.anuncio {
+	padding: 20px;
+	margin: 10px 0px;
+}
+.anuncio p {
+	font-size: 1.1rem
+}
+/* card */
+#programador .card,
+#tecnico .card,
+#seguridad .card,
+#redes .card{
+	width: 80%;
+	height: 500px;
+	margin: 10px 10%;
+	overflow: hidden;
+}
+/* edit card img */
+#programador img,
+#tecnico img,
+#seguridad img,
+#redes img{
+	width: 100%;
+	height: 250px;
+}
+#programador img:hover,
+#tecnico img:hover,
+#seguridad img:hover,
+#redes img:hover{
+	transform: scale(1.1);
+	transition: all 0.5s ease-out;
+}
+
+
