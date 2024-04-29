@@ -41,4 +41,15 @@
 	}
 }
 /*animacion hover IMG */
-
+#carousel-app img{
+	width: 60%;
+	margin: 0 20%;
+	height: 400px;
+}
+@media  (max-width: 767.99px) {
+	#carousel-app img{
+		width: 80%;
+		margin: 0 10%;
+		height: 250px;
+	}
+}
