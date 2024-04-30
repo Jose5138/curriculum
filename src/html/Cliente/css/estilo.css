@@ -11,7 +11,38 @@ h2
 }
 body {
   position: relative;
+  overflow-x: hidden;
 }
+/* efecto de anuncio */
+.tex{
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+.tex .parrafo{
+  position: absolute;
+  white-space: nowrap;
+  color: white;
+  text-transform:uppercase;
+  animation: parrafo 17s ease-out infinite;
+}
+@media screen and (max-width: 479.98px){
+      @keyframes parrafo{from{left: 100%;}to{left: -185%;}}}
+
+@media screen and (min-width: 480px){
+  @keyframes parrafo{from{left: 100%;}to{left: -190%;}}}
+
+@media screen and (min-width: 668px){
+      @keyframes parrafo{from{left: 100%;}  to{  left: -140%;}}}
+      
+@media screen and (min-width: 868px){
+      @keyframes parrafo{from{left: 100%;}  to{  left: -90%;}}}
+
+@media screen and (min-width: 1024px){
+      @keyframes parrafo{from{left: 100%;}to{left: -70%;}}}
 /* video de cabecera */
 .img-header 
 {
@@ -113,12 +144,7 @@ body {
 .wrapper.open {
   transform: translateX(200px);
 }
-.wrapper .wrapper2 {
-  width: 100%;
-  background-color: black;
-  padding-top: 50px;
-  padding-bottom: 100px;
-} 
+
 /* fondo del menú móvil */
 .opennav {
   position: fixed;
@@ -215,22 +241,20 @@ nav li.active {
 nav li a {
   text-decoration: none;
 }
-/* style las card */
-.wrapper2{
+.wrapper .wrapper2 {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+  flex-flow: wrap;
+  justify-content: center;
   gap: 25px;
-  padding: 0 100px;
-  background-color: #fff;
-
-}
+  padding: 20px 20px;
+  background-color: whitesmoke;
+} 
 .stage{
   list-style: none;
   padding: 0;
 }
 .scene {
-  width: 200px;
+  width: 250px;
   height: 350px;
   perspective: 1000px;
 }
