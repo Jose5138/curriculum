@@ -7,6 +7,9 @@
 	font-family: 'Roboto', sans-serif;
 	text-decoration: none;
 }
+body{
+	overflow-x: hidden;
+}
 .boton-scroll a {
 	position: fixed;
 	width: 40px;
@@ -40,6 +43,52 @@
 		transform: translateY(10px);
 	}
 }
-.container .lista{
-	padding: 0px 50px;
+#SO h1,
+#HL h1
+{
+	text-transform: uppercase;
+	font-weight: 700;
+	text-align: center;
+	padding: 20px;
+	font-size: 30px;
+}
+#SO .container-flex,
+#HL .container-logos
+{
+	display: flex;
+	height: auto;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	gap: 15px;
+}
+#SO .container-flex img,
+#HL .container-logos img
+{
+	width: 140px;
+	height: 140px;
+	border-radius: 100%;
+}
+#SO .container-flex img:hover,
+#HL .container-logos img:hover
+{
+	box-shadow: 5px 5px 10px gray;
+	cursor: pointer;
+	transition: 0.3s;
+	translate: 0px -3px;
+}
+@media only screen and (max-width: 480px) {
+#titular h1
+{
+	font-size: 25px;
+
+}
+#SO h1,
+#HL h1
+{
+	font-size: 15px;
+}
+.boton-scroll a
+{
+	right: 5%;
+}
 }
