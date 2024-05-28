@@ -48,6 +48,7 @@
                                     <a class="dropdown-item" href="programador.html">Programador Web</a>
                                     <a class="dropdown-item" href="tecnico.html">Técnico Informático</a>
                                     <a class="dropdown-item" href="ciberseguridad.html">Ciberseguridad</a>
+                                    <a class="dropdown-item" href="redes.html">Técnico de Redes</a>
                                     <a class="dropdown-item active bg-secondary" href="#">Títulos Obtenidos</a>
                               </div>
                         </li>
@@ -61,33 +62,13 @@
             </div>
       </div>
 </nav>
+<h1 class="jumbotron text-center">
+      Certificaciones y Grados en Informática
+</h1>
 <div id="titular" class="container ">
-      <h1 class="p-5 text-center">
-            Certificaciones y Grados en Informática
-      </h1>
-<!------link nav------->
-<nav>
-      <ul class="nav nav-tabs my-3">
-            <li class="nav-item">
-                  <a class="nav-link aria-current="page" href="website.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="programador.html">Programador Web.</a>
-            </li>
-            <li class="nav-item">
-                  <a class="nav-link" href="tecnico.html">Técnico Informático</a>
-            </li>
-            <li class="nav-item">
-                  <a class="nav-link" href="ciberseguridad.html">Ciberseguridad</a>
-            </li>
-            <li class="nav-item">
-                  <a class="nav-link active bg-light" href="#">Títulos Obtenidos</a>
-            </li>
-      </ul>
-</nav>
 <!-- linux -->
 <section id="titulos">
-      <h1>Mis Credenciales en Informática</h1>
+      <h1 class="text-center p-4">Mis Credenciales en Informática</h1>
       <div class="container-flex">
             <div class="hardware">
                   <img src="../img/titulos/hardware.png" alt="img">
@@ -99,8 +80,9 @@
 </section>
 <hr>
 <section id="certificados">
-      <h1>Logros Académicos en Informática</h1>
+      <h1 class="text-center p-4">Logros Académicos en Informática</h1>
       <div class="container-flex">
+            <!-- card 1 -->
             <div class="mt-5">
                   <div class="card">
                         <img src="../img/titulos/titulo1.PNG" class="card-img-top" alt="Imagen de ejemplo">
@@ -117,7 +99,7 @@
                         </div>
                   </div>
             </div>
-            <!-- modal 2 -->
+            <!-- card 2 -->
             <div class="mt-5">
                   <div class="card" >
                         <img src="../img/titulos/titulo2.PNG" class="card-img-top" alt="Imagen de ejemplo">
@@ -134,11 +116,28 @@
                         </div>
                   </div>
             </div>
+            <!-- card 3 -->
+            <div class="mt-5">
+                  <div class="card" >
+                        <img src="../img/titulos/logros-cisco.PNG" class="card-img-top" alt="Imagen de ejemplo">
+                        <div class="card-body">
+                              <h5 class="card-title">
+                                    Logros optenidos en Networking Academy Cisco.
+                              </h5>
+                              <p class="card-text">
+                                    Estas son todas las insignias que logrado hasta los momentos en los cursos online que ofrece la academia de cisco. 
+                              </p>
+                              <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#titulo3">
+                                    ver más grande
+                              </button>
+                        </div>
+                  </div>
+            </div>
       </div>
 </section>
 <!-- Modal -->
 <div class="modal fade" id="titulo1" tabindex="-1" role="dialog" aria-labelledby="titulo1" aria-hidden="true">
-      <div class="modal-dialog" role="document">
+      <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                   <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">Título de Cisco.</h5>
@@ -152,9 +151,9 @@
             </div>
       </div>
 </div>
-                  
+<!--Modal 2  -->
 <div class="modal fade" id="titulo2" tabindex="-1" role="dialog" aria-labelledby="titulo2" aria-hidden="true">
-      <div class="modal-dialog" role="document">
+      <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                   <div class="modal-header">
                         <h5 class="modal-title" id="titulo2">Título de Cisco.</h5>
@@ -167,37 +166,38 @@
                   </div>
             </div>
       </div>
-</div>  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</div> 
+<!--Modal 3  -->
+<div class="modal fade" id="titulo3" tabindex="-1" role="dialog" aria-labelledby="titulo2" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                  <div class="modal-header">
+                        <h5 class="modal-title" id="titulo2">Insignias de Cisco logrados</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                              <span aria-hidden="true">&times;</span>
+                        </button>
+                  </div>
+                  <div class="modal-body">
+                        <img class="img-fluid" src="../img/titulos/logros-cisco.PNG" alt="img">
+                  </div>
+            </div>
+      </div>
+</div> 
 <!-----Paginación-->
 <div class="mt-4">
       <div class="row justify-content-center">
             <nav class="d.flex justify-content-center" aria-label="Page navigation example">
                   <ul class="pagination">
                         <li class="page-item">
-                              <a class="page-link text-secondary" href="ciberseguridad.html" aria-label="Previous">
+                              <a class="page-link text-secondary" href="redes.html" aria-label="Previous">
                                     <span aria-hidden="true">&laquo;</span>
                               </a>
                         </li>
                         <li class="page-item"><a class="page-link text-secondary" href="programador.html">1</a></li>
                         <li class="page-item"><a class="page-link text-secondary" href="#">2</a></li>
                         <li class="page-item"><a class="page-link text-secondary" href="ciberseguridad.html">3</a></li>
-                        <li class="page-item active"><a class="page-link text-light bg-secondary" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link text-secondary" href="redes.html">4</a></li>
+                        <li class="page-item active"><a class="page-link text-light bg-secondary" href="#">5</a></li>
                         <li class="page-item">
                               <a class="page-link text-secondary" href="programador.html" aria-label="Next">
                                     <span aria-hidden="true">&raquo;</span>
@@ -244,7 +244,6 @@
 			</div>
 		</div>
 	</div>
-
 	<!-- Footer Links -->
 	<footer class="page-footer font-small unique-color-dark">
 		<div class="container text-center text-md-left">
