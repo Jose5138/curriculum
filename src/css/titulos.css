@@ -1,0 +1,19 @@
+#titulos .container-flex
+{
+      display: flex;
+      justify-content: space-around;
+}
+#titulos .container-flex img{
+      width: 150px;
+      height: 150px;
+}
+#certificados .container-flex
+{
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+}
+#certificados .container-flex .card
+{
+      width: 250px;
+}
