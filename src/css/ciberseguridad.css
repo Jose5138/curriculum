@@ -61,13 +61,24 @@ body{
 	flex-wrap: wrap;
 	gap: 15px;
 }
-#SO .container-flex img,
+#SO .container-flex .kali img,
+#SO .container-flex .mind img,
+#SO .container-flex .backbox img,
+#SO .container-flex .win10 img,
+#SO .container-flex .win11 img,
 #HL .container-logos img
 {
 	width: 140px;
 	height: 140px;
 	border-radius: 100%;
 }
+#SO .container-flex .winserver img
+{
+	border-radius: 20px;
+	width: 250px;
+	height: 140px;
+}
+
 #SO .container-flex img:hover,
 #HL .container-logos img:hover
 {
