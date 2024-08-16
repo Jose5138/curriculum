@@ -1,3 +1,18 @@
+window.onload = function() {
+      var audio1 = document.getElementById('miAudio');
+      var audio2 = document.getElementById('miAudio1');
+      // Reproducir el primer audio automáticamente al cargar la página
+      audio2.play();
+      // Cuando el primer audio termine, iniciar el segundo
+      audio2.addEventListener('ended', function() {
+            audio1.play();
+      });
+      window.addEventListener('scroll', function() {
+            const video = document.querySelector('.parallax-video');
+            const scrollPosition = window.pageYOffset;
+            video.style.transform = `translate(-50%, calc(-50% + ${scrollPosition * 0.5}px))`;
+        });
+};
 $(document).ready(function () {
       $(window).scroll(function () {
             var animar = document.getElementById('scroll_subir');
@@ -43,4 +58,33 @@ $(document).ready(function () {
       $('#comics9').hover(function () {
             $(".imgizq").attr("src", "../img/comics/comics9.jpg");
       });
+      // función que se ejecutará cuando le damos click al las card del modal
+      // cabiará los datos de forma dinámica
+      document.querySelectorAll('.openModal').forEach(button => {
+            button.addEventListener('click', function() {
+                // Obtener los datos del botón clicado
+                const title = this.getAttribute('data-title');
+                const videoSrc = this.getAttribute('data-video');
+        
+                // Actualizar el título del modal
+                document.getElementById('dynamicModalLabel').textContent = title;
+        
+                // Actualizar la fuente del video en el modal
+                const videoElement = document.getElementById('modalVideo');
+                videoElement.querySelector('source').src = videoSrc;
+                videoElement.load(); // Recargar el video con la nueva fuente
+        
+                // Mostrar el modal
+                const modal = new bootstrap.Modal(document.getElementById('dynamicModal'));
+                modal.show();
+            });
+        });
+        
+        // Pausar el video cuando se cierra el modal
+        document.getElementById('dynamicModal').addEventListener('hidden.bs.modal', function () {
+            const videoElement = document.getElementById('modalVideo');
+            videoElement.pause();
+            videoElement.currentTime = 0; // Reinicia el video al inicio si es necesario
+        });
+   
 }); //end ready
