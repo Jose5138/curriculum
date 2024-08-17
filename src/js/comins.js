@@ -2,10 +2,10 @@ window.onload = function() {
       var audio1 = document.getElementById('miAudio');
       var audio2 = document.getElementById('miAudio1');
       // Reproducir el primer audio automáticamente al cargar la página
-      audio2.play();
+      audio1.play();
       // Cuando el primer audio termine, iniciar el segundo
-      audio2.addEventListener('ended', function() {
-            audio1.play();
+      audio1.addEventListener('ended', function() {
+            audio2.play();
       });
       window.addEventListener('scroll', function() {
             const video = document.querySelector('.parallax-video');
