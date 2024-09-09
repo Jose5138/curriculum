@@ -88,32 +88,28 @@ body {
 .anuncio p {
 	font-size: 1.1rem
 }
-/* card */
+/* edit card img */
 #programador .card,
 #tecnico .card,
 #seguridad .card,
-#redes .card{
-	width: 80%;
-	height: 500px;
-	margin: 10px 10%;
-	overflow: hidden;
+#redes .card,
+#comic .card,
+#arduino .card
+{
+	height: 550px;
+	margin: 30px 0;
 }
-/* edit card img */
+
 #programador img,
 #tecnico img,
 #seguridad img,
-#redes img{
+#redes img,
+#comic img,
+#arduino img
+{
 	width: 100%;
 	height: 250px;
 }
-#programador img:hover,
-#tecnico img:hover,
-#seguridad img:hover,
-#redes img:hover{
-	transform: scale(1.1);
-	transition: all 0.5s ease-out;
-}
-
 @media (max-width: 767px) {
 	.header-content h1 {
 		font-size: 4rem;
@@ -121,4 +117,15 @@ body {
 	.header-content p {
 		font-size: 1rem;
 	}
+	/* card */
+	#programador .card,
+	#tecnico .card,
+	#seguridad .card,
+	#redes .card,
+	#arduino .card{
+    width: 70%;
+	height: 500px;
+	margin: 10px 15%;
+	overflow: hidden;
+}
 }

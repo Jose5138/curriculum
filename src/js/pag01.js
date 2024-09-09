@@ -16,5 +16,10 @@ $(document).ready(function () {
                   });
             });
       });
+      function showAlert() {
+            alert("La página está en construcción. Al finalizar el proyecto, estará disponible la información de lo que se hizo.");
+        }
+        // Asignar la función al botón
+        document.getElementById("btnarduino").addEventListener("click", showAlert);
 }); //ready    
       

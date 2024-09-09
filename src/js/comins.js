@@ -2,7 +2,7 @@ window.onload = function() {
       var audio1 = document.getElementById('miAudio');
       var audio2 = document.getElementById('miAudio1');
       // Reproducir el primer audio automáticamente al cargar la página
-      audio1.play();
+      audio1.play(); 
       // Cuando el primer audio termine, iniciar el segundo
       audio1.addEventListener('ended', function() {
             audio2.play();

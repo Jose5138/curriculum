@@ -7,14 +7,13 @@
       <meta name="author" content="jose a perez s">
       <!-- <link rel="icon" href=""> -->
       <title>Técnico Informático</title>
-      <!--Template based on URL below-->
-      <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
-      <!-- Bootstrap core CSS -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
       <!----google font lobster------>
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap" rel="stylesheet">
+      <!-- Bootstrap core CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
       <!----cdn fontawesome--->
       <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
       <!-- Place your stylesheet here-->
@@ -87,7 +86,9 @@
       <div class="jumbotron">
             <h1>"Renaciendo de las Calles: Una Computadora Transformada en Servidor Local"</h1>
             <p class="text-muted">
-                  "Descubre la historia de esta computadora encontrada en la calle que ha sido completamente revitalizada. Después de un exhaustivo lavado profundo y una meticulosa restauración de la carcasa, esta máquina ha sido transformada en una verdadera obra de arte. Además, se han realizado mejoras internas significativas, incluyendo una expansión de memoria ram, CPU y de disco duro ssh, llevando al límite sus capacidades, junto con un cambio de pasta térmica para garantizar un rendimiento óptimo. Ahora, este ordenador rescatado ha encontrado un nuevo propósito como servidor local (NAS) en mi hogar, utilizado para realizar respaldos y asegurar la integridad de mis datos con un SO OpenMediaVault (OMV) con una configuración de RAID1 para respaldar mi información".
+                  Descubre la historia de esta computadora encontrada en la calle que ha sido completamente revitalizada. Después de un exhaustivo lavado profundo y una meticulosa restauración de la carcasa, esta máquina ha sido transformada en una verdadera obra de arte. Además, se han realizado mejoras internas significativas, incluyendo una expansión de memoria ram, CPU y de disco duro ssh, llevando al límite sus capacidades, junto con un cambio de pasta térmica para garantizar un rendimiento óptimo. Ahora, este ordenador rescatado ha encontrado un nuevo propósito como servidor local (NAS) en mi hogar, utilizado para realizar respaldos y asegurar la integridad de mis datos con un SO  
+                  <button class="btn btn-warning openModal" data-title="Instalación y configuración del nas OMV." data-video="../videos/omv.mp4">OpenMediaVault (OMV)</button>
+                  con una configuración de RAID1 para respaldar mi información.
             </p>
       </div>
 </section>
@@ -102,12 +103,28 @@
       <div class="imagenes8"></div>
       <div class="imagenes9"></div>
 </section>
+<!-- Modal Único -->
+<div class="modal fade" id="dynamicModal" aria-hidden="true" aria-labelledby="dynamicModalLabel" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                  <div class="modal-header">
+                  <h5 class="modal-title fs-5" id="dynamicModalLabel"></h5>
+                  <button type="button" class="btn-close cerrar" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                  <video controls id="modalVideo" class="w-100">
+                      <source src="" type="video/mp4">
+                  </video>
+              </div>
+          </div>
+      </div>
+</div>
 </main>
 <!-----Paginación-->
 <div class="container mt-4">
-      <div class="row justify-content-center">
-            <nav class="d.flex justify-content-center" aria-label="Page navigation example">
-                  <ul class="pagination">
+      <div class="row ">
+            <nav aria-label="Page navigation example">
+                  <ul class="d.flex justify-content-center pagination">
                         <li class="page-item">
                               <a class="page-link text-secondary" href="programador.html" aria-label="Previous">
                                     <span aria-hidden="true">&laquo;</span>
@@ -179,24 +196,6 @@
 					</p>
 				</div>
 				<!-- Grid column -->
-				<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-					<!-- Links -->
-					<h6 class="text-uppercase font-weight-bold">links</h6>
-					<hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-					<p>
-						<a href="#!">LINK</a>
-					</p>
-					<p>
-						<a href="#!">LINK</a>
-					</p>
-					<p>
-						<a href="#!">LINK</a>
-					</p>
-					<p>
-						<a href="#!">LINK</a>
-					</div>
-				</p>
-				<!-- Grid column -->
 				<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
 					<!-- Links -->
 					<h6 class="text-uppercase font-weight-bold">Contacto</h6>
@@ -215,7 +214,7 @@
 			</div><!---fin row----->
 		</div>
 		<!-- Copyright -->
-		<div class="bg-secondary text-light footer-copyright text-center py-3">© Agosto 2024 Copyright:
+		<div class="bg-secondary text-light footer-copyright text-center py-3">© Septiembre 2024 Copyright:
 		</div>
 	</footer>
 </main><!-----///footer------>
@@ -225,6 +224,8 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/2.0.0/scrollReveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../js/tecnico.js"></script>
 </body>
 </html>
