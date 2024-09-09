@@ -40,6 +40,9 @@
 		transform: translateY(10px);
 	}
 }
+.navbar .container .navbar-brand img{
+	width: 75px;
+}
 /*animacion hover IMG */
 .container-flex .img{
 	display: flex;

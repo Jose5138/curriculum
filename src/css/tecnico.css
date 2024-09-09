@@ -44,6 +44,9 @@
 body{
   overflow-x: hidden;
 }
+.navbar .container .navbar-brand img{
+	width: 75px;
+}
 /*animacion hover IMG */
 .info1 figure{
   position: relative;

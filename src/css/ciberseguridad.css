@@ -43,7 +43,9 @@ body{
 		transform: translateY(10px);
 	}
 }
-
+.navbar .container .navbar-brand img{
+	width: 75px;
+}
 #SO h1,
 #HL h1
 {
